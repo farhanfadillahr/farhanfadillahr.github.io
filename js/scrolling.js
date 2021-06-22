@@ -15,12 +15,19 @@ $(window).scroll(function(){
     $("#gambar").removeClass("invisible");
   }
 
-  if(scroll >= 987){
+  if(scroll >= 893 && scroll < 2617){
     $("#Statresume").addClass("active");
     $("#Stathome").removeClass("active");
-  }else if(scroll < 987) {
-    $("#Statresume").removeClass("active");
+    $("#Statporto").removeClass("active");
+
+  }else if(scroll < 893) {
     $("#Stathome").addClass("active");
+    $("#Statresume").removeClass("active");
+    $("#Statporto").removeClass("active");
+  }else if(scroll > 2617) {
+    $("#Statporto").addClass("active");
+    $("#Statresume").removeClass("active");
+    $("#Stathome").removeClass("active");
   }
 
 });

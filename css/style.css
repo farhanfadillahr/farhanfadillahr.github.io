@@ -104,6 +104,9 @@ section{
   transform: rotate(45deg);
 }
 
+ul li a :hover{
+  color: #125872;
+}
 
 /* timeline */
 .main-timeline {
